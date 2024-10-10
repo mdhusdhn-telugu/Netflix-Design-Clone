@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prior to login by Madhu Sudhan</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="upi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+<body>
+    
+    <div class="welcome-page">
+        <div class="header">
+            <div class="logo"><img src="./Images/Netflix brand.png" alt="logo"></div>
+            <div class="language">
+                <a href="#"><button>Sign Out</button></a>
+            </div>
+        </div>
+    </div>
+
+
+<div class="main-content">
+    <div class="steps">STEP <span class="number">4</span> OF <span class="number">4</span></div>
+
+<h2>Set up UPI AutoPay</h2>
+<p>You can change this recurring payment any time in your settings.</p>
+
+<div class="custom-select-wrapper">
+    <div class="custom-select">
+      <div class="custom-select-trigger">
+        <span>Select your UPI method</span>
+        <div class="arrow"></div>
+      </div>
+      <div class="custom-options">
+        <div class="custom-option" data-value="bhim">
+          <img src="./Images/bhimpay.png" alt="bhimpay"> BHIM
+        </div>
+        <div class="custom-option" data-value="paytm">
+          <img src="./Images/paytm.png" alt="paytm"> Paytm
+        </div>
+        <div class="custom-option" data-value="phonePe">
+          <img src="./Images/phonepay.png" alt="phonepay"> PhonePe
+        </div>
+        <div class="custom-option" data-value="amazonpay">
+          <img src="./Images/amazonpay.png" alt="amazonpay"> Amazon Pay
+        </div>
+        <div class="custom-option" data-value="googlepay">
+          <img src="./Images/gpay.png" alt="gpay"> Google Pay
+        </div>
+        <div class="custom-option" data-value="other">
+          <img src="./Images/other-icon.png" alt="other"> Other
+        </div>
+      </div>
+      <select name="Select-upi" id="upipay" style="display: none;">
+        <option value="">Select your UPI method</option>
+        <option value="bhim">>BHIM</option>
+        <option value="paytm">Paytm</option>
+        <option value="phonePe">PhonePe</option>
+        <option value="amazonpay">Amazon Pay</option>
+        <option value="googlepay">Google Pay</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+  </div>
+  <br>
+  <div class="form-group">
+    <input type="text" id="card-number" class="input-field" placeholder="UPI ID" required>
+</div>
+    
+<div class="find-upi" style="margin-top: 15px;"><a href="">How do I find my UPI ID?</a></div>
+<div class="next-button"><a href="#">Next</a></div>
+</div>
+
+    
+
+            <div class="footer-container">
+                <p>Questions? Call <a href="tel:000-800-919-1694">000-800-919-1694</a></p>
+                <div class="footer-links">
+                    <div class="column">
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <ul>
+                            <li><a href="#">Help Centre</a></li>
+                            <li><a href="#">Cookie Preferences</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <ul>
+                            <li><a href="#">Netflix Shop</a></li>
+                            <li><a href="#">Corporate Information</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <ul>
+                            <li><a href="#">Terms of Use</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="language-select">
+                      <select>
+                        <option><i class="fa-solid fa-globe"></i>English<i class="fa-solid fa-caret-down"></i></option>
+                        <option>हिन्दी</option>
+                      </select>
+                    </div>
+                  </div>
+        </div>
+              
+
+
+
+        <style>
+            .main-content {
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 82vh;
+    width: 30%;
+}
+
+.main-content .steps {
+margin-top: 50px;
+}
+
+.main-content .number {
+
+}
+
+.main-content h2 {
+
+}
+
+.main-content p {
+font-size: 1.1rem;
+font-weight: 100;
+}
+
+.main-content a {
+    text-decoration: underline;
+    color: #007bff;
+}
+
+.main-content .find-upi a {
+    margin-top: 30px;
+}
+
+.main-content .next-button a {
+    background-color: rgb(229, 9, 20);
+    color: white; 
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.8rem;
+    padding: 10px; 
+    border-radius: 5px; 
+    display: inline-block; 
+    text-decoration: none;
+}
+
+.main-content .next-button a:hover {
+    background-color: rgb(193, 17, 25);
+}
+
+.custom-select-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .custom-select {
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .custom-select-trigger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+  }
+  
+  .arrow {
+    width: 0;
+    height: 0;
+    margin-left: 10px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #333;
+  }
+  
+  .custom-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid #ccc;
+    background-color: white;
+    display: none;
+    z-index: 2;
+  }
+  
+  .custom-option {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .custom-option img {
+    width: 35px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .custom-option:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .custom-options.show {
+    display: block;
+  }
+  
+
+.form-group input {
+width: 100%;
+height: 45px;
+outline: none;
+border: 1px solid #ccc;
+  }
+
+  .form-group input:focus,
+.form-group input:valid {
+    color: #333;
+}
+
+
+        </style>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const trigger = document.querySelector('.custom-select-trigger');
+  const options = document.querySelector('.custom-options');
+  const optionsList = document.querySelectorAll('.custom-option');
+  const select = document.getElementById('upipay');
+
+  trigger.addEventListener('click', function() {
+    options.classList.toggle('show');
+  });
+
+  optionsList.forEach(option => {
+    option.addEventListener('click', function() {
+      const value = this.getAttribute('data-value');
+      const text = this.textContent.trim();
+
+      trigger.querySelector('span').textContent = text;
+      select.value = value;
+      options.classList.remove('show');
+    });
+  });
+
+  window.addEventListener('click', function(e) {
+    if (!document.querySelector('.custom-select-wrapper').contains(e.target)) {
+      options.classList.remove('show');
+    }
+  });
+});
+
+
+
+</script>
+
+        </body>
+
+
+</html>

@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    background-color: white;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+.welcome-page {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    min-height: 100px;
+    margin-top: 5px;
+    position: relative;
+    background-size: cover;
+    box-sizing: border-box;
+    background-blend-mode: overlay;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: -10px;
+    padding: 10px 20px;
+    z-index: 1;
+    border-bottom: 1px solid rgb(210, 204, 204);
+}
+
+.logo img {
+    width: 200px; 
+    height: auto;
+margin-left: 10%;
+  }
+
+
+.language a button {
+    margin-right: 20px;
+    border: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: black;
+    font-size: 15px;
+    background-color: transparent;
+}
+
+.language a button:hover {
+    text-decoration: underline;
+}
+
+
+
+.main-content {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.lock-icon {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100px; 
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.lock-icon img {
+  width: 50px; 
+  height: auto; 
+}
+
+.steps {
+  color: rgb(118, 118, 118);
+}
+
+.number {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+}
+
+.main-text {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.main-text h2 {
+  font-size: 2rem;
+}
+
+.encryption {
+  text-align: right;
+  justify-content: right;
+  align-items: end;
+  font-size: 0.8rem;
+  color: #333;
+  margin-bottom: 2px;
+  margin-right: 2px;
+}
+
+.encryption i {
+  margin-left: 5px;
+}
+
+.main-content a {
+  text-decoration: none;
+  color: black;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px;
+  background-color: #fff; 
+  border: 2px solid #ccc;
+  border-radius: 5px; 
+  text-decoration: none; 
+}
+
+.cardsp {
+  margin: 0;
+}
+
+.cards img {
+  margin-left: 10px;
+  max-height: 25px;
+  max-width: 39px; 
+}
+
+.cards i {
+  margin-left: auto;
+  color: #000000; 
+}
+
+
+.upi {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px;
+  background-color: #fff; 
+  border: 2px solid #ccc;
+  border-radius: 5px; 
+  text-decoration: none; 
+  margin-top: 5px;
+  margin-bottom: 90px;
+}
+
+
+.upi img {
+  margin-left: 10px;
+  max-height: 25px;
+  max-width: 39px; 
+}
+
+.upi i {
+  margin-left: auto;
+  color: #000000; 
+}
+
+
+  .footer-container {
+        min-width: 100%;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 20px;
+        color: #737373;
+        background-color: #f3f3f3;
+      }
+      
+      .footer-container p {
+        margin-bottom: 20px;
+        color: #737373;
+        font-size: 0.9rem;
+        margin-left: 4%;
+        letter-spacing: 0.5px;
+        font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+      }
+      
+      .footer-container a {
+        color: #737373;
+        text-decoration: none;
+        font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+        font-size: 0.8rem;
+        letter-spacing: 0.5px;
+      }
+      
+      
+      .footer-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 4%;
+        width: 80%;
+        font-size: 0.5rem;
+      }
+      
+      .column {
+        flex: 1;
+      }
+      
+      .column ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      
+      .column ul li {
+        margin-bottom: 10px;
+      }
+      
+      .footer-bottom {
+        display: flex;
+        justify-content: flex-start; 
+        align-items: center;
+        margin-left: 4%;
+      }
+      
+      .language-select {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .language-select select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        padding: 10px;
+        padding-right: 30px; 
+        font-size: 16px;
+        cursor: pointer;
+      }
+            

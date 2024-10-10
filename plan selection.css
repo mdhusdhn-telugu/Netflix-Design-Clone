@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    background-color: white;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+.welcome-page {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    min-height: 100px;
+    margin-top: 5px;
+    position: relative;
+    background-size: cover;
+    box-sizing: border-box;
+    background-blend-mode: overlay;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: -30px;
+    padding: 10px 20px;
+    z-index: 1;
+    border-bottom: 1px solid rgb(210, 204, 204);
+}
+
+.logo img {
+    width: 200px; 
+    height: auto;
+margin-left: 10%;
+  }
+
+
+.language a button {
+    margin-right: 20px;
+    border: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: black;
+    font-size: 15px;
+    background-color: transparent;
+}
+
+.language a button:hover {
+    text-decoration: underline;
+}
+
+
+
+.main-content {
+  margin: 0 auto;
+  width: 86%;
+  margin-bottom: 120px;
+}
+
+.steps {
+  color: rgb(118, 118, 118);
+}
+
+.number {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+}
+
+
+
+
+
+.plan-selection {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  gap: 10px; 
+  justify-content: center;
+}
+
+.plan {
+  width: 100%; 
+  max-width: 300px; 
+  border: 1px solid #ccc; 
+  border-radius: 18px;
+  padding: 22px; 
+  cursor: pointer;
+  font-size: 0.9rem;
+  position: relative;
+  transition: box-shadow 0.3s ease;
+}
+
+.plan.selected {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.plan.selected i {
+visibility: visible;
+}
+
+
+.plan .selected-plan, .plan .monthly-price, .plan .quality, .plan .Resolution, .plan .Supported-devices, .plan .Devices-sametime, .plan .Download-devices, .plan .Spatial-audio {
+  margin-bottom: 10px; 
+  border-bottom: 1px solid rgb(118, 118, 118);
+  width: 99.5%;
+  margin: 0 auto;
+  color: rgb(118, 118, 118);
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+.plan .Download-devices {
+  border-bottom: none;
+}
+
+.plan .selected-plan {
+  padding: 5px;
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  border-radius: 12px;
+  position: relative;
+}
+
+.plan .selected-plan h4 {
+  color: white;
+}
+
+.most-popular-tag {
+  background-color: rgb(109, 59, 227); 
+  color: white;
+  font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+  text-align: center;
+  font-size: 0.7rem;
+  width: 100.5%;
+  padding: 5px 10px;
+  border-radius: 12px 12px 0 0; 
+  position: absolute;
+  top: -20px; 
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.plan.Basic {
+  border-radius: 0;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+.plan.Mobile .selected-plan {
+  background-color: rgb(29, 82, 157); 
+  background-image: radial-gradient(140.76% 131.96% at 100% 100%, rgb(33, 114, 227) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%);
+}
+
+.plan.Basic .selected-plan {
+  background-color: rgb(29, 82, 157); 
+  background-image: radial-gradient(140.76% 131.96% at 100% 100%, rgb(109, 59, 227) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%);
+}
+
+.plan.Standard .selected-plan {
+  background-color: rgb(29, 82, 157); 
+  background-image: radial-gradient(140.76% 131.96% at 100% 100%, rgb(176, 56, 220) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%);
+}
+
+.plan.Premium .selected-plan {
+  background-color: rgb(29, 82, 157); 
+  background-image: radial-gradient(140.76% 131.96% at 100% 100%, rgb(229, 9, 20) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%);
+}
+
+.plan .selected-plan p, .plan .selected-plan h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  padding: 0;
+  padding-left: 10px;
+  padding-top: 8px;
+}
+
+.plan h4 {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.selected-plan i {
+  position: absolute;
+  bottom: 10px; 
+  right: 10px; 
+  color: #ffffff; 
+  visibility: hidden;
+}
+.notice {
+  color: #737373;
+  font-size: 0.8rem;
+  font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+  padding: 10px;
+}
+
+.notice .next-button {
+  background-color: rgb(229, 9, 20);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin: 20px auto;
+  font-size: 1.8rem;
+  padding: 10px; 
+  border-radius: 5px; 
+}
+
+.next-button a {
+  text-decoration: none;
+  color: white;
+}
+
+.next-button:hover {
+  background-color: rgb(193, 17, 25);
+}
+
+.terms a {
+  text-decoration: none;
+  color: rgb(0, 113, 235);
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
+
+
+
+    .footer-container {
+        min-width: 100%;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 20px;
+        color: #737373;
+        background-color: #f3f3f3;
+      }
+      
+      .footer-container p {
+        margin-bottom: 20px;
+        color: #737373;
+        font-size: 0.9rem;
+        margin-left: 4%;
+        letter-spacing: 0.5px;
+        font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+      }
+      
+      .footer-container a {
+        color: #737373;
+        text-decoration: none;
+        font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+        font-size: 0.8rem;
+        letter-spacing: 0.5px;
+      }
+      
+      
+      .footer-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 4%;
+        width: 80%;
+        font-size: 0.5rem;
+      }
+      
+      .column {
+        flex: 1;
+      }
+      
+      .column ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      
+      .column ul li {
+        margin-bottom: 10px;
+      }
+      
+      .footer-bottom {
+        display: flex;
+        justify-content: flex-start; 
+        align-items: center;
+        margin-left: 4%;
+      }
+      
+      .language-select {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .language-select select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        padding: 10px;
+        padding-right: 30px; 
+        font-size: 16px;
+        cursor: pointer;
+      }
+            

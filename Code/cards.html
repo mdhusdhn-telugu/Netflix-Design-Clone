@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prior to login by Madhu Sudhan</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+<body>
+    
+    <div class="welcome-page">
+        <div class="header">
+            <div class="logo"><img src="../Images/Netflix brand.png" alt="logo"></div>
+            <div class="language">
+                <a href="#"><button>Sign Out</button></a>
+            </div>
+        </div>
+    </div>
+
+
+<div class="payment-section">
+    <div class="steps">STEP <span class="number">1</span> OF <span class="number">3</span></div>
+<h3>Set up your credit or debit card</h3>
+<div class="cards">
+    <img src="../Images/visapay.png" alt="visa"><img src="../Images/mastercard.png" alt="mastercard"><img src="../Images/dinerspay.png" alt="dinerspay">
+</div>
+
+<div class="card-form">
+    <div class="form-group">
+        <input type="text" id="card-number" required>
+        <label for="card-number">Card number</label>
+        <i class="fa-regular fa-credit-card icon"></i>
+        <span class="error-message">Please enter a card number.</span>
+    </div>
+    <div class="form-row">
+        <div class="form-group">
+            <input type="text" id="expiration-date" required>
+            <label for="expiration-date" data-placeholder="MM/YY">Expiration date</label>
+        </div>
+        <div class="form-group">
+            <input type="text" id="cvv" required>
+            <label for="cvv">CVV</label>
+            <i class="fa-regular fa-circle-question icon"></i>
+        </div>
+    </div>
+    <div class="form-group">
+        <input type="text" id="name-on-card" required>
+        <label for="name-on-card">Name on card</label>
+    </div>
+    <div class="subscription">
+        <p>&#8377;199/month</p>
+        <span>Basic</span>
+        <a href="#" class="change-link">Change</a>
+    </div>
+</div>
+
+<p>Any payment above ₹ 2000 shall need additional authentication.</p>
+<p>By checking the checkbox below, you agree to our <span class="terms-rules"><a href="">Terms of Use, Privacy Statement</a></span>, and that you are over 18. Netflix will automatically continue your membership and charge the membership fee (currently ₹199/month) to your payment method until you cancel. You may cancel at any time to avoid future charges.</p>
+<input type="checkbox" id="agree" name="agreement" value="agree">
+<label for="agreement"> I agree.</label><br>
+
+<div class="next-button"><a href="#">Start Membership</a></div>
+
+      <p>This page is protected by Google reCAPTCHA to ensure you're not a bot.</p>
+      <a href="" style="text-decoration: none; color: #007bff;">Learn more</a>
+</div>
+
+
+
+            <div class="footer-container">
+                <p>Questions? Call <a href="tel:000-800-919-1694">000-800-919-1694</a></p>
+                <div class="footer-links">
+                    <div class="column">
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <ul>
+                            <li><a href="#">Help Centre</a></li>
+                            <li><a href="#">Cookie Preferences</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <ul>
+                            <li><a href="#">Netflix Shop</a></li>
+                            <li><a href="#">Corporate Information</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <ul>
+                            <li><a href="#">Terms of Use</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="language-select">
+                      <select>
+                        <option><i class="fa-solid fa-globe"></i>English<i class="fa-solid fa-caret-down"></i></option>
+                        <option>हिन्दी</option>
+                      </select>
+                    </div>
+                  </div>
+        </div>
+              
+
+
+
+        </body>
+
+
+        <style>
+            
+
+.payment-section {
+    text-align: left;
+    justify-content:space-around;
+    align-items: center;
+    margin: 0 auto;
+    width: 450px;
+    height: 130vh;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 30px;
+}
+
+p {
+    color: #8c8c8c;
+    font-size: 0.8rem;
+}
+
+.terms-rules a {
+text-decoration: none;
+color:  #007bff;
+}
+
+.steps {
+    transform: translateY(55px);
+    font-size: 0.8rem;
+}
+
+.payment-section h3 {
+    font-size: 2rem;
+    transform: translateY(30px);
+}
+
+.cards {
+    border: none;
+    align-items: start;
+    justify-content: left;
+    margin-left: -16px;
+}
+
+.card-form {
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    font-size: 16px;
+    color: #666;
+    transition: all 0.2s;
+    pointer-events: none;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline-color: black;
+    outline: #666;
+    height: 48px;
+}
+
+.form-group input:focus,
+.form-group input:valid {
+    border-color: gray;
+}
+
+.form-group input:focus + label,
+.form-group input:valid + label {
+    top: -2px;
+    left: 10px;
+    font-size: 12px;
+    color: #333;
+}
+
+.form-group input:focus:invalid {
+    border-color: rgb(40, 36, 36);
+}
+
+.form-group input:focus:invalid + label {
+}
+
+.form-group .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+.form-group .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+.form-group input:invalid + .error-message {
+    display: block;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.subscription {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+}
+
+.subscription p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.subscription span {
+    font-size: 14px;
+    color: #666;
+}
+
+.change-link {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.change-link:hover {
+    text-decoration: underline;
+}
+
+
+.next-button a {
+        background-color: rgb(229, 9, 20);
+        color: white; 
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 1.8rem;
+        padding: 10px; 
+        border-radius: 5px; 
+        display: inline-block; 
+        text-decoration: none;
+    }
+    
+    .next-button a:hover {
+        background-color: rgb(193, 17, 25);
+    }
+
+    input[type="checkbox"] {
+            accent-color: #007bff; 
+        }
+
+        label {
+            font-size: 16px;
+            color: #333;
+            margin-left: 8px;
+            font-family: Arial, sans-serif;
+        }
+
+
+        </style>
+
+        <script>
+            document.querySelectorAll('.form-group input').forEach(input => {
+    input.addEventListener('input', function() {
+        if (this.validity.valid) {
+            this.nextElementSibling.style.display = 'none';
+        } else {
+            this.nextElementSibling.style.display = 'block';
+        }
+    });
+
+    input.addEventListener('focus', function() {
+        if (this.id === 'expiration-date' && !this.value) {
+            this.placeholder = document.querySelector(`label[for="${this.id}"]`).getAttribute('data-placeholder');
+        }
+    });
+
+    input.addEventListener('blur', function() {
+        if (this.id === 'expiration-date' && !this.value) {
+            this.placeholder = '';
+        }
+    });
+});
+
+        </script>
+</html>
